@@ -1,0 +1,25 @@
+What would you execute to determine ...
+
+the hostname of the system you are on?
+hostname
+
+the type and version of the operating system the machine machine is running? (Show both at the same time, with one command.)
+uname -ov
+
+the full path to your home directory?
+echo $HOME
+
+which other users are logged into the machine you are using?
+who
+
+how many words there are in the spell check dictionary (/usr/share/lib/dict/words)? (If your computer doesn't have that file, test this answer on an instructional machine.)
+wc -w /usr/share/lib/dict/words
+
+what groups you belong to?
+groups
+
+what files (excluding directories) are located in your home directory and all its subdirectories?
+ls -R ~
+
+what man pages have references to 'bash'?
+man -K bash

@@ -1,0 +1,34 @@
+2a) Create a folder named "public_html" in your home directory. Place a 'readme.txt' file in there. (It should have the path: ~/public_html/readme.txt. Set up file permissions so that you can see the directory listing and download 'readme.txt' from the browser. What commands did you use for this?
+cd ~
+mkdir public_html
+cd public_html
+touch readme.txt
+chmod 755 ~/
+chmod 755 ~/public_html
+chmod 755 ~/public_html/readme.txt
+
+Setting read and execute permissions to ~, public_html and readme.txt
+
+
+2b) Suppose that your working directory is your top-level directory and you give the command:
+
+$ chmod 711 ~/public_html
+Can you still view the directory listing? Can you still download readme.txt?
+
+No. Yes.
+Took read permission of public_html directory, but readme still has all its permissions.
+
+2c) Again suppose that your working directory is your top-level directory (~/public_html has its pre-2b permissions), and you give the command:
+
+$ chmod 600 ~/public_html/readme.txt
+Can you still view the directory listing? Can you still download readme.txt?
+
+Yes. No. Only the host can read and write on readme.txt with chmod 600. Others cant.
+	
+2d) Again suppose that your working directory is your top-level directory (~/public_html and ~/public_html/readme.txt have their pre-2b permissions), and you give the command:
+
+$ chmod 700 ~/
+
+Can you still view the directory listing? Can you still download readme.txt?
+
+No and No.
